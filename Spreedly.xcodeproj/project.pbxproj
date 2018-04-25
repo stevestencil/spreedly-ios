@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AA1E632A293186FBB3A16C6 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1E2FFD34847269F158BCF /* BankAccount.swift */; };
 		631723171BD67B81008EC5C2 /* Spreedly.h in Headers */ = {isa = PBXBuildFile; fileRef = 631723161BD67B81008EC5C2 /* Spreedly.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6337405A1BC967150091372A /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633740591BC967150091372A /* RequestSerializer.swift */; };
 		63579E3E1BD6978F00E0485D /* CreditCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63579E3D1BD6978F00E0485D /* CreditCardTests.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AA1E2FFD34847269F158BCF /* BankAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 		631723161BD67B81008EC5C2 /* Spreedly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spreedly.h; sourceTree = "<group>"; };
 		633740591BC967150091372A /* RequestSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSerializer.swift; sourceTree = "<group>"; };
 		63579E3D1BD6978F00E0485D /* CreditCardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardTests.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				635843D81BD9269F006A4F6B /* PaymentMethod.swift */,
 				635843DA1BD9361F006A4F6B /* SpreedlyError.swift */,
 				63E67F801BC6C4600023E846 /* Supporting Files */,
+				1AA1E2FFD34847269F158BCF /* BankAccount.swift */,
 			);
 			path = Spreedly;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				635EB2BB1BC6E06900DCA59B /* CreditCard.swift in Sources */,
 				63E67F7C1BC6C1420023E846 /* SpreedlyAPIClient.swift in Sources */,
 				635843DB1BD9361F006A4F6B /* SpreedlyError.swift in Sources */,
+				1AA1E632A293186FBB3A16C6 /* BankAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

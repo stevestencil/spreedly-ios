@@ -15,7 +15,8 @@ open class PaymentMethod: NSObject {
     open var shippingState, shippingZip, shippingCountry, shippingPhoneNumber: String?
     open var verificationValue, number: String?
     open var month, year: Int?
-    
+    open var bankName, accountType, accountHolderType, routingNumberDisplayDigits, accountNumberDisplayDigits: String?
+
     convenience init(attributes: [String: AnyObject]) {
         self.init()
         
@@ -75,6 +76,16 @@ open class PaymentMethod: NSObject {
                 self.verificationValue = value as? String
             case "number":
                 self.number = value as? String
+            case "bank_name":
+                self.bankName = value as? String
+            case "account_type":
+                self.accountType = value as? String
+            case "account_holder_type":
+                self.accountHolderType = value as? String
+            case "routing_number_display_digits":
+                self.routingNumberDisplayDigits = value as? String
+            case "account_number_display_digits":
+                self.accountNumberDisplayDigits = value as? String
             default:
                 break;
             }
