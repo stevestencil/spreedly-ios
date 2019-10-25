@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AA1E632A293186FBB3A16C6 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1E2FFD34847269F158BCF /* BankAccount.swift */; };
 		46FCEDAC26B28251A5441524 /* Pods_Spreedly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EB07D12C3865F11DBE8AE0 /* Pods_Spreedly.framework */; };
 		631723171BD67B81008EC5C2 /* Spreedly.h in Headers */ = {isa = PBXBuildFile; fileRef = 631723161BD67B81008EC5C2 /* Spreedly.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6337405A1BC967150091372A /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633740591BC967150091372A /* RequestSerializer.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AA1E2FFD34847269F158BCF /* BankAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 		24EB07D12C3865F11DBE8AE0 /* Pods_Spreedly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spreedly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DE46959D75210E93E40E58 /* Pods_Spreedly_SpreedlyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spreedly_SpreedlyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D261846DD7FC52334D6DC32 /* Pods-SpreedlyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpreedlyTests.release.xcconfig"; path = "Target Support Files/Pods-SpreedlyTests/Pods-SpreedlyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				635843D81BD9269F006A4F6B /* PaymentMethod.swift */,
 				635843DA1BD9361F006A4F6B /* SpreedlyError.swift */,
 				63E67F801BC6C4600023E846 /* Supporting Files */,
+				1AA1E2FFD34847269F158BCF /* BankAccount.swift */,
 			);
 			path = Spreedly;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				B2C26B27230DD80300FACDFD /* TransactionLifecycle.swift in Sources */,
 				63E67F7C1BC6C1420023E846 /* SpreedlyAPIClient.swift in Sources */,
 				635843DB1BD9361F006A4F6B /* SpreedlyError.swift in Sources */,
+				1AA1E632A293186FBB3A16C6 /* BankAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

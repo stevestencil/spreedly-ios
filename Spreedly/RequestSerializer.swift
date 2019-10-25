@@ -79,4 +79,41 @@ open class RequestSerializer {
             return (nil, serializeError)
         }
     }
+
+    public static func serialize(_ bankAccount: BankAccount) -> (data: Data?, error: NSError?) {
+        var dict = [String: String]()
+
+        if let bankAccountFirstName = bankAccount.firstName {
+            dict["first_name"] = bankAccountFirstName
+        }
+
+        if let bankAccountLastName = bankAccount.lastName {
+            dict["last_name"] = bankAccountLastName
+        }
+
+        if let bankAccountRoutingNumber = bankAccount.routingNumber {
+            dict["bank_routing_number"] = bankAccountRoutingNumber
+        }
+
+        if let bankAccountNumber = bankAccount.accountNumber {
+            dict["bank_account_number"] = bankAccountNumber
+        }
+
+        if let bankAccountType = bankAccount.accountType {
+            dict["bank_account_type"] = bankAccountType
+        }
+
+        if let bankAccountHolderType = bankAccount.accountHolderType {
+            dict["bank_account_holder_type"] = bankAccountHolderType
+        }
+
+        let body = [ "payment_method": [ "bank_account": dict ]]
+
+        do {
+            let data = try JSONSerialization.data(withJSONObject: body, options: [])
+            return (data, nil)
+        } catch let serializeError as NSError {
+            return (nil, serializeError)
+        }
+    }
 }
